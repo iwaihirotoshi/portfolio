@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>岩井 博俊 | ポートフォリオ</title>
+  <style>
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+      background: #f7fafd;
+      color: #222;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #667eea 0%, #5bc0eb 100%);
+      color: #fff;
+      padding: 48px 0 32px 0;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      margin-bottom: 16px;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 8px 0;
+      font-weight: 600;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      opacity: 0.85;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(102,126,234,0.08);
+      padding: 0.5em 0;
+      text-align: center;
+    }
+    nav a {
+      color: #667eea;
+      text-decoration: none;
+      margin: 0 1.5em;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #5bc0eb;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 16px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(102,126,234,0.07);
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+    section {
+      margin-bottom: 56px;
+    }
+    h2 {
+      color: #667eea;
+      font-size: 1.6rem;
+      border-left: 6px solid #5bc0eb;
+      padding-left: 12px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .profile-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+    .profile-table th, .profile-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e0e7ef;
+      text-align: left;
+    }
+    .profile-table th {
+      background: #f7fafd;
+      color: #667eea;
+      width: 120px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .skill-tag {
+      background: #e3eefd;
+      color: #667eea;
+      padding: 6px 16px;
+      border-radius: 16px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .project-card {
+      background: #f7fafd;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(102,126,234,0.06);
+      margin-bottom: 24px;
+      padding: 20px 24px;
+    }
+    .project-title {
+      color: #222;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .project-meta {
+      font-size: 0.95rem;
+      color: #667eea;
+      margin-bottom: 8px;
+    }
+    .project-desc {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .project-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .project-skill {
+      background: #fff;
+      color: #5bc0eb;
+      border: 1px solid #5bc0eb;
+      border-radius: 12px;
+      padding: 3px 10px;
+      font-size: 0.9rem;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .contact-list li {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
+    .contact-list a {
+      color: #667eea;
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.95rem;
+      padding: 24px 0 12px 0;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px 4px; }
+      header img { width: 80px; height: 80px; }
+      h1 { font-size: 1.3rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/markup_1000001852.jpg" alt="岩井博俊">
+    <h1>岩井 博俊</h1>
+    <div class="subtitle">Webアプリケーション開発（フロントエンド／バックエンド） | 31歳 | 男性</div>
+    <div class="subtitle">得意技術：PHP(Laravel), React, Next.js, VB</div>
+    <div class="subtitle">GitHub: <a href="https://github.com/iwaihirotoshi" style="color:#fff;text-decoration:underline;">iwaihirotoshi</a></div>
+  </header>
+  <nav>
+    <a href="#about">自己紹介</a>
+    <a href="#skills">スキルセット</a>
+    <a href="#projects">制作実績</a>
+    <a href="#contact">連絡先</a>
+  </nav>
+  <div class="container">
+    <section id="about">
+      <h2>自己紹介</h2>
+      <table class="profile-table">
+        <tr><th>氏名</th><td>岩井 博俊</td></tr>
+        <tr><th>年齢</th><td>31歳</td></tr>
+        <tr><th>性別</th><td>男</td></tr>
+        <tr><th>最終学歴</th><td>宇部工業高等専門学校 経営情報学科</td></tr>
+        <tr><th>自己PR</th><td>フリーランスとしてWebシステム開発全般を一気通貫し、要件定義から設計・実装・運用まで幅広く対応しています。特に「清潔感」や「効率化」が求められるクリーニング業界向けのIoT・業務管理システム開発を得意とし、LaravelやReactによるフルスタック開発や、AWS等のクラウド活用も豊富です。GitHub Copilotや最新技術の導入にも積極的です。</td></tr>
+      </table>
+    </section>
+    <section id="skills">
+      <h2>スキルセット</h2>
+      <div class="skills-list">
+        <span class="skill-tag">PHP（10年以上）</span>
+        <span class="skill-tag">Laravel（10年以上）</span>
+        <span class="skill-tag">React（4年）</span>
+        <span class="skill-tag">Next.js（2年）</span>
+        <span class="skill-tag">VB（10年以上）</span>
+        <span class="skill-tag">C#（2年）</span>
+        <span class="skill-tag">Python（3年）</span>
+        <span class="skill-tag">JavaScript（10年以上）</span>
+        <span class="skill-tag">HTML/CSS（10年以上）</span>
+        <span class="skill-tag">MySQL（10年以上）</span>
+        <span class="skill-tag">PostgreSQL（2年）</span>
+        <span class="skill-tag">AWS（5年）</span>
+        <span class="skill-tag">Linux（10年以上）</span>
+        <span class="skill-tag">Raspberry Pi（2年）</span>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>制作実績</h2>
+      <div class="project-card">
+        <div class="project-title">コインランドリーIoT化システム</div>
+        <div class="project-meta">ランドスケープ・ソフトウェア株式会社 | 2016年～ 2021年 | チーム5名</div>
+        <div class="project-desc">コインランドリーの稼働状況をIoT機器で取得し、Web管理画面で可視化・遠隔制御。スマホアプリ連携や決済API、Google Maps連携も担当。</div>
+        <div class="project-skills">
+          <span class="project-skill">PHP</span>
+          <span class="project-skill">Laravel</span>
+          <span class="project-skill">JavaScript</span>
+          <span class="project-skill">MySQL</span>
+          <span class="project-skill">AWS EC2</span>
+          <span class="project-skill">Raspberry Pi</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">クリーニング店の業務管理システム</div>
+        <div class="project-meta">ランドスケープ・ソフトウェア株式会社 | 2015年～2022年 | チーム2名</div>
+        <div class="project-desc">店舗の受発注・在庫・顧客管理を一元化。Webアプリで業務効率化・自動化を実現。AWSやExcel連携も担当。</div>
+        <div class="project-skills">
+          <span class="project-skill">PHP</span>
+          <span class="project-skill">Laravel</span>
+          <span class="project-skill">HTML</span>
+          <span class="project-skill">JavaScript</span>
+          <span class="project-skill">MySQL</span>
+          <span class="project-skill">AWS EC2</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">UberEats連携の宅配クリーニングシステム</div>
+        <div class="project-meta">業務委託 | 2022年4月～2025年6月 | チーム3名</div>
+        <div class="project-desc">UberEats APIと連携し、宅配クリーニングの注文・配達・決済を自動化。Google Maps APIやAI画像認識も導入。</div>
+        <div class="project-skills">
+          <span class="project-skill">PHP</span>
+          <span class="project-skill">React</span>
+          <span class="project-skill">HTML</span>
+          <span class="project-skill">JavaScript</span>
+          <span class="project-skill">MySQL</span>
+          <span class="project-skill">AWS EC2</span>
+          <span class="project-skill">GitHub Copilot</span>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>連絡先</h2>
+      <ul class="contact-list">
+        <li>メール: <a href="mailto:info@smart-refine-systems.jp">info@smart-refine-systems.jp</a></li>
+        <li>GitHub: <a href="https://github.com/iwaihirotoshi" target="_blank">iwaihirotoshi</a></li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    &copy; 2024 岩井 博俊 | ポートフォリオサイト
+  </footer>
+</body>
+</html>
